@@ -13,10 +13,10 @@ function BirthdaysList({ birthdays, setBirthdays }) {
         birthdays.map((birthday) => {
           return (
             <li
-              className="ml-[10px] mb-[24px] list-none flex items-center justify-between"
+              className="list-items ml-[10px] mb-[24px] list-none flex items-center justify-between"
               key={birthday.id}
             >
-              <div className="flex gap-[12px] items-center ">
+              <div className="person_about flex gap-[12px] items-center ">
                 <img
                   className="object-cover w-[75px] h-[75px] rounded-[50%]"
                   src={birthday.image}
@@ -29,7 +29,7 @@ function BirthdaysList({ birthdays, setBirthdays }) {
               </div>
               <button
                 onClick={() => handleDelete(birthday.id)}
-                className="w-[133px] mr-[10px] h-[28px] bg-[#E81313] text-white rounded-[4px] mt-[-15px]"
+                className="delete_button w-[133px] mr-[10px] h-[28px] bg-[#E81313] text-white rounded-[4px] mt-[-15px]"
               >
                 Delete
               </button>

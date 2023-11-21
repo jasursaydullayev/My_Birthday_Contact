@@ -49,3 +49,36 @@ html, body, #root {
   font-weight: 700;
   src: url('./fonts/poppins-v20-latin-700.woff2') format('woff2');
 }
+
+/* Resposive */
+
+@media screen and (max-width: 580px) {
+  .body_card{
+    width: 500px;
+  }
+  .list-items{
+    flex-direction: column;
+  }
+  .person_about{
+    margin-bottom: 35px;
+  }
+  .delete_button{
+    margin-bottom: 35px;
+  }
+  .btn {
+    width: 340px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .btn {
+    width: 280px;
+  }
+  .btn_wrapper{
+    margin-left: -58px;
+  }
+  .body_card{
+    width: 330px;
+    height: 1050px;
+  }
+}
